@@ -1,0 +1,40 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260818013053
+Username: DIR-MOITT\Administrator
+RunAs User: DIR-MOITT\Administrator
+Configuration Name: 
+Machine: DIR-MOITT (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\fix-starttype.ps1
+Process ID: 11852
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== Fix driver start type + rebuild ===
+[SC] ChangeServiceConfig SUCCESS
+
+
+ImagePath    : System32\drivers\applewirelessmouse.sys
+Type         : 1
+Start        : 1
+ErrorControl : 1
+Parent: BTHENUM\{00001124-0000-1000-8000-00805F9B34FB}_VID&0001004C_PID&0269\7&249FFAA1&0&98460AB0F6BF_C00000000
+
+SERVICE_NAME: applewirelessmouse 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 1077  (0x435)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+Service: Stopped / start=System
+**********************
+Windows PowerShell transcript end
+End time: 20260818013104
+**********************

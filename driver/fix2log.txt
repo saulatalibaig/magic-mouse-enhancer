@@ -1,0 +1,58 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260818013419
+Username: DIR-MOITT\Administrator
+RunAs User: DIR-MOITT\Administrator
+Configuration Name: 
+Machine: DIR-MOITT (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\fix2.ps1
+Process ID: 5336
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== Revert to demand start, rebuild, verify ===
+[SC] ChangeServiceConfig SUCCESS
+
+
+Start        : 3
+ErrorControl : 1
+Parent: BTHENUM\{00001124-0000-1000-8000-00805F9B34FB}_VID&0001004C_PID&0269\7&249FFAA1&0&98460AB0F6BF_C00000000
+
+SERVICE_NAME: applewirelessmouse 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+=== Driver stack after rebuild ===
+Microsoft PnP Utility
+
+Instance ID:                BTHENUM\{00001124-0000-1000-8000-00805f9b34fb}_VID&0001004c_PID&0269\7&249ffaa1&0&98460AB0F6BF_C00000000
+Device Description:         Bluetooth HID Device
+Class Name:                 HIDClass
+Class GUID:                 {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Manufacturer Name:          Microsoft
+Status:                     Started
+Driver Name:                hidbth.inf
+Matching Drivers:
+    Driver Name:            hidbth.inf
+    Provider Name:          Microsoft
+    Class Name:             HIDClass
+    Class GUID:             {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+    Driver Version:         06/21/2006 10.0.26100.8737
+    Signer Name:            Microsoft Windows
+    Matching Device ID:     BTHENUM\{00001124-0000-1000-8000-00805f9b34fb}
+    Driver Rank:            00FF3000
+    Driver Status:          Best Ranked / Installed
+**********************
+Windows PowerShell transcript end
+End time: 20260818013430
+**********************

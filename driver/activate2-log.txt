@@ -1,0 +1,39 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260818011840
+Username: DIR-MOITT\Administrator
+RunAs User: DIR-MOITT\Administrator
+Configuration Name: 
+Machine: DIR-MOITT (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\activate2.ps1
+Process ID: 14364
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== Activation v2: disable/enable parent node ===
+Parent: BTHENUM\{00001124-0000-1000-8000-00805F9B34FB}_VID&0001004C_PID&0269\7&249FFAA1&0&98460AB0F6BF_C00000000
+LowerFilters:  applewirelessmouse
+Disabling parent...
+After disable, status: Error
+Enabling parent...
+After enable, status: OK
+
+SERVICE_NAME: applewirelessmouse 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+Service: Running
+**********************
+Windows PowerShell transcript end
+End time: 20260818011852
+**********************

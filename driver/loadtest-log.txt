@@ -1,0 +1,66 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260818011712
+Username: DIR-MOITT\Administrator
+RunAs User: DIR-MOITT\Administrator
+Configuration Name: 
+Machine: DIR-MOITT (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\loadtest.ps1
+Process ID: 23600
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== Driver load test ===
+File exists: True
+Version: 6.1.7700.0  Company: Apple Inc.  Desc: Apple Wireless Mouse
+Signature: Valid  Signer: CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+Unable to find type [System.Reflection.PortableExecutable].
+At C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\loadtest.ps1:14 char:28
++ ... Write-Host "Is x64: $(([System.Reflection.PortableExecutable]::GetMac ...
++                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Reflection.PortableExecutable:TypeName) [], RuntimeException
+    + FullyQualifiedErrorId : TypeNotFound
+Unable to find type [System.Reflection.PortableExecutable].
+At C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\loadtest.ps1:14 char:28
++ ... Write-Host "Is x64: $(([System.Reflection.PortableExecutable]::GetMac ...
++                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Reflection.PortableExecutable:TypeName) [], RuntimeException
+    + FullyQualifiedErrorId : TypeNotFound
+
+Is x64:   Size: 78424
+
+Attempting manual start (tests image loadability)...
+sc start output:  SERVICE_NAME: applewirelessmouse          TYPE               : 1  KERNEL_DRIVER           STATE              : 4  RUNNING                                  (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)         WIN32_EXIT_CODE    : 0  (0x0)         SERVICE_EXIT_CODE  : 0  (0x0)         CHECKPOINT         : 0x0         WAIT_HINT          : 0x0         PID                : 0         FLAGS              :
+
+SERVICE_NAME: applewirelessmouse 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+--- recent System log kernel-driver entries ---
+
+
+TimeCreated : 8/18/2026 1:13:46 AM
+Id          : 7045
+Msg         : A service was installed in the system.
+
+              Service Name:  Apple Wireless Mouse
+              Service File Name:  System32\drivers\applewirelessmouse.sys
+              Service Type:  kernel mode driver
+              Service Start Type:  dema
+
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20260818011713
+**********************

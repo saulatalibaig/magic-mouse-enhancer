@@ -1,0 +1,15 @@
+﻿
+# ---- Asterxa: repository hygiene ----
+bin/
+obj/
+packages/
+*.user
+*.suo
+dist/
+output/
+*.msi
+driver/apple-official/extracted/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

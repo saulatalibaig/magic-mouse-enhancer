@@ -1,0 +1,1 @@
+schtasks /Create /F /TN "AppleWirelessMouseFinalize" /TR "powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\finalize.ps1"" /SC ONSTART /RU SYSTEM /RL HIGHEST

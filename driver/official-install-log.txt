@@ -1,0 +1,57 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260818013947
+Username: DIR-MOITT\Administrator
+RunAs User: DIR-MOITT\Administrator
+Configuration Name: 
+Machine: DIR-MOITT (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\official-install.ps1
+Process ID: 5252
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+=== Install official Apple driver package (Boot Camp 6.1.14) ===
+Removed leftover manual service
+Adding driver package to DriverStore...
+Microsoft PnP Utility
+
+Adding driver package:  AppleWirelessMouse.inf
+Driver package added successfully.
+Published Name:         oem213.inf
+Unable to install driver package: The specified service has been marked for deletion.
+
+Total driver packages:  1
+Added driver packages:  0
+Restarting device: BTHENUM\{00001124-0000-1000-8000-00805F9B34FB}_VID&0001004C_PID&0269\7&249FFAA1&0&98460AB0F6BF_C00000000
+Microsoft PnP Utility
+
+Restarting device:         BTHENUM\{00001124-0000-1000-8000-00805f9b34fb}_VID&0001004c_PID&0269\7&249ffaa1&0&98460AB0F6BF_C00000000
+Device restarted successfully.
+=== State ===
+
+SERVICE_NAME: applewirelessmouse 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+Service config:
+
+
+ImagePath    : System32\drivers\applewirelessmouse.sys
+Type         : 1
+Start        : 4
+ErrorControl : 1
+Enum binding (devices this driver attached to):
+**********************
+Windows PowerShell transcript end
+End time: 20260818014001
+**********************

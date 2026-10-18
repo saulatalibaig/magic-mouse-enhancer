@@ -1,0 +1,39 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260818011344
+Username: DIR-MOITT\Administrator
+RunAs User: DIR-MOITT\Administrator
+Configuration Name: 
+Machine: DIR-MOITT (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\install-apple-bt-driver.ps1
+Process ID: 16264
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+  Magic Mouse Bluetooth touch - driver installer
+  ===============================================
+[1/4] Locating Magic Mouse Bluetooth HID device...
+  Found: HID-compliant vendor-defined device
+  ID:    HID\{00001124-0000-1000-8000-00805F9B34FB}_VID&0001004C_PID&0269&COL02\8&265435A6&1&0001
+[2/4] Locating applewirelessmouse.sys...
+  Driver: C:\Users\dir.minister\.asterxa-ai\desktop-workspace\MagicMouseEnhancer\driver\applewirelessmouse.sys
+  Copied to C:\WINDOWS\System32\drivers\applewirelessmouse.sys
+[3/4] Creating kernel service...
+  Service ready.
+[4/4] Registering LowerFilter...
+  LowerFilter registered.
+  Device restarted.
+
+  Done. Restart MagicMouseEnhancer if it is running.
+
+**********************
+Windows PowerShell transcript end
+End time: 20260818011349
+**********************
