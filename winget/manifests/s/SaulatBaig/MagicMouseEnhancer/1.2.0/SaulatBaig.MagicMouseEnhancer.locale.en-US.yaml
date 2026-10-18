@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.12.0.schema.json
+
+PackageIdentifier: SaulatBaig.MagicMouseEnhancer
+PackageVersion: 1.2.0
+PackageLocale: en-US
+Publisher: Saulat Baig
+PublisherUrl: https://github.com/saulatalibaig
+PublisherSupportUrl: https://github.com/saulatalibaig/magic-mouse-enhancer/issues
+Author: Saulat Baig
+PackageName: Magic Mouse Enhancer
+PackageUrl: https://github.com/saulatalibaig/magic-mouse-enhancer
+License: MIT
+LicenseUrl: https://github.com/saulatalibaig/magic-mouse-enhancer/blob/main/LICENSE
+Copyright: Copyright (c) 2026 Saulat Baig
+ShortDescription: Enables full Apple Magic Mouse functionality on Windows - smooth scrolling, two-finger gestures, pinch-to-zoom and Smart Zoom, with no paid drivers.
+Description: |-
+  Enables full Apple Magic Mouse functionality on Windows 10 and 11: smooth one-finger
+  scrolling (vertical and horizontal) and two-finger swipe gestures, with no paid drivers.
+
+  The app reads the mouse's touch surface over HID and injects the corresponding Windows
+  input (mouse wheel, horizontal wheel, keyboard shortcuts) - exactly like a driver would,
+  but as a small system-tray application. Over Bluetooth it layers on top of Apple's own
+  kernel driver to add the gesture features Windows lacks.
+
+  Features include two-finger swipe for Back/Forward and Task view/Show desktop, pinch to
+  zoom, Smart Zoom (double-tap), tap to click, two-finger tap for middle click, low-battery
+  alerts, and configurable scroll and pinch sensitivity.
+
+  Connection notes: over USB the app reads the touch surface directly and all gestures work
+  with no driver installed. Over Bluetooth, Windows blocks HID feature reports from user
+  mode, so the bundled install-apple-bt-driver.ps1 installs Apple's signed kernel driver as
+  a HID lower filter, on top of which this app adds the two-finger gestures. Requires Windows
+  10 build 17763 or newer, x64.
+Moniker: magicmouse
+Tags:
+  - apple
+  - magic-mouse
+  - mouse
+  - bluetooth
+  - hid
+  - gesture
+  - gestures
+  - multitouch
+  - scroll
+  - pinch-to-zoom
+  - smart-zoom
+  - trackpad
+  - driver
+  - tray-application
+ReleaseNotesUrl: https://github.com/saulatalibaig/magic-mouse-enhancer/releases/tag/v1.2.0
+Documentations:
+  - DocumentLabel: README
+    DocumentUrl: https://github.com/saulatalibaig/magic-mouse-enhancer#readme
+ManifestType: defaultLocale
+ManifestVersion: 1.12.0

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SaulatBaig.MagicMouseEnhancer
+PackageVersion: 1.2.0
+InstallerType: inno
+Scope: user
+MinimumOSVersion: 10.0.17763.0
+InstallModes:
+  - interactive
+  - silent
+  - silentWithProgress
+UpgradeBehavior: install
+ReleaseDate: 2026-10-18
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/saulatalibaig/magic-mouse-enhancer/releases/download/v1.2.0/MagicMouseEnhancer-Setup-1.2.0.exe
+    InstallerSha256: 459E360116C4F15E49F69AC21DF5F9033D9516BD02A54D69474CD59E36D6BFA1
+    InstallerSwitches:
+      Silent: /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
+      SilentWithProgress: /SILENT /SUPPRESSMSGBOXES /NORESTART /SP-
+    ProductCode: '{B7C0A9E1-4D2F-4E8A-9C3B-6F5D8A1E2B44}_is1'
+    AppsAndFeaturesEntries:
+      - DisplayName: Magic Mouse Enhancer
+        DisplayVersion: 1.2.0
+        Publisher: Saulat Baig
+        ProductCode: '{B7C0A9E1-4D2F-4E8A-9C3B-6F5D8A1E2B44}_is1'
+        InstallerType: inno
+ManifestType: installer
+ManifestVersion: 1.12.0
