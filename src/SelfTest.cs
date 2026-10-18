@@ -60,7 +60,7 @@ namespace MagicMouseEnhancer {
             } catch { }
 
             Log.Init();
-            _lines.Add("Magic Mouse Enhancer self-test â€” " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+            _lines.Add("Magic Mouse Enhancer self-test — " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
             _lines.Add("Platform: Windows " + OsVersion() + " (" + (Environment.Is64BitProcess ? "x64" : "x86") + " process)");
 
             Run("Decode MM1 two-touch report", TestDecodeMm1);
@@ -120,12 +120,12 @@ namespace MagicMouseEnhancer {
             try {
                 string problem = test();
                 bool ok = problem == null;
-                string line = (ok ? "PASS  " : "FAIL  ") + name + (ok ? "" : "  â€”  " + problem);
+                string line = (ok ? "PASS  " : "FAIL  ") + name + (ok ? "" : "  —  " + problem);
                 _lines.Add(line);
                 Emit(line);
                 if (!ok) _failures++;
             } catch (Exception ex) {
-                string line = "FAIL  " + name + "  â€”  EXCEPTION: " + ex.GetType().Name + ": " + ex.Message;
+                string line = "FAIL  " + name + "  —  EXCEPTION: " + ex.GetType().Name + ": " + ex.Message;
                 _lines.Add(line);
                 Emit(line);
                 _failures++;
@@ -236,7 +236,7 @@ namespace MagicMouseEnhancer {
             engine.Process(r);
         }
 
-        /// <summary>Feed a report with both touches present â€” real HID reports always carry all active touches.</summary>
+        /// <summary>Feed a report with both touches present — real HID reports always carry all active touches.</summary>
         static void Feed2(GestureEngine engine, int id1, int x1, int y1, byte s1, int id2, int x2, int y2, byte s2) {
             TouchReport r = new TouchReport();
             TouchPoint p1 = new TouchPoint();
@@ -413,7 +413,7 @@ namespace MagicMouseEnhancer {
                 if (MagicMouse.IsMagicMouse(vid, pid)) appleMice++;
             }
             Emit("      HID interfaces present: " + paths.Count + ", Magic Mice found: " + appleMice +
-                 (appleMice == 0 ? " (expected on this machine â€” mouse not paired)" : ""));
+                 (appleMice == 0 ? " (expected on this machine — mouse not paired)" : ""));
             return null; // enumeration working is the assertion; device presence is environment-dependent
         }
 
